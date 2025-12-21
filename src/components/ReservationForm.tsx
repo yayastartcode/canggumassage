@@ -17,6 +17,7 @@ export function ReservationForm() {
     'Termite Control (Rayap)',
     'Fumigation (Hama Gudang)',
     'Disinfection',
+    'Hama Lainnya',
   ]
 
   const handleSubmit = (e: FormEvent) => {

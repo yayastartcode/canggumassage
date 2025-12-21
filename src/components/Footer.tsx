@@ -1,4 +1,4 @@
-import { Bug, Rat, Shield, Warehouse, Droplets } from 'lucide-react'
+import { Bug, Rat, Shield, Warehouse, Droplets, Sparkles } from 'lucide-react'
 
 export function Footer() {
   const services = [
@@ -7,6 +7,7 @@ export function Footer() {
     { name: 'Termite Control (Rayap)', icon: Shield },
     { name: 'Fumigation (Hama Gudang)', icon: Warehouse },
     { name: 'Disinfection', icon: Droplets },
+    { name: 'Hama Lainnya', icon: Sparkles },
   ]
 
   const currentYear = new Date().getFullYear()

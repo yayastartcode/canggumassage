@@ -1,6 +1,6 @@
 import { motion } from 'motion/react'
 import { Button } from '@/components/ui/button'
-import { Bug, Rat, Shield, Warehouse, Droplets } from 'lucide-react'
+import { Bug, Rat, Shield, Warehouse, Droplets, Sparkles } from 'lucide-react'
 
 export function ServicesSection() {
   const services = [
@@ -33,6 +33,12 @@ export function ServicesSection() {
       title: 'Disinfection',
       subtitle: '',
       description: 'Layanan disinfeksi menyeluruh untuk menciptakan lingkungan yang bersih, sehat, dan bebas kuman.',
+    },
+    {
+      icon: Sparkles,
+      title: 'Hama Lainnya',
+      subtitle: '',
+      description: 'Solusi pengendalian untuk berbagai jenis hama lainnya yang mengganggu kenyamanan rumah atau kantor Anda.',
     },
   ]
 

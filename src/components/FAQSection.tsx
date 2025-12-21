@@ -26,7 +26,7 @@ export function FAQSection() {
     },
     {
       question:
-        "Apakah PT. Solusi Jitu Pest melayani perusahaan atau hanya rumah tinggal?",
+        "Apakah Jaga Hama melayani perusahaan atau hanya rumah tinggal?",
       answer:
         "Kami melayani baik residensial (rumah tinggal) maupun komersial (kantor, gudang, pabrik, hotel, restoran, dll). Kami memiliki tim dan peralatan khusus untuk menangani berbagai skala proyek, dari rumah kecil hingga bangunan komersial besar.",
     },
