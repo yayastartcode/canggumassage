@@ -23,12 +23,14 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="lg:col-span-1">
             <img
-              src="/images/fndlg.png"
+              src="/images/momhomlg.png"
               alt="Mom-Hom Logo"
               className="h-16 w-auto object-contain mb-4 bg-white rounded-lg p-2"
             />
             <p className="text-slate-400 leading-relaxed mb-4">
-              Mom-Hom solusi terbaik untuk pijat dan terapi tradisional bersertifikat. Layanan 24 jam dengan terapis profesional datang ke lokasi Anda.
+              Mom-Hom solusi terbaik untuk pijat dan terapi tradisional
+              bersertifikat. Layanan 24 jam dengan terapis profesional datang ke
+              lokasi Anda.
             </p>
           </div>
 
