@@ -7,37 +7,36 @@ import { getWhatsAppLink } from '@/lib/config'
 export function ReservationForm() {
   const [formData, setFormData] = useState({
     name: '',
-    whatsapp: '',
     address: '',
     service: '',
   })
 
   const services = [
-    'Tradisional Massage',
-    'Massage + Lulur',
+    'Traditional Massage',
+    'Massage + Body Scrub',
     'Swedish Massage',
-    'Deep Massage',
-    'Vitalitas Massage',
-    'Thai Massage + Kretek',
-    'Totok Wajah + Full Body Massage',
+    'Deep Tissue Massage',
+    'Vitality Massage',
+    'Thai Massage + Stretching',
+    'Facial Acupressure + Full Body Massage',
     'Shiatsu Massage',
     'Balinese Massage',
     'Javanese Massage',
-    'Kerokan',
+    'Indonesian Coin Scraping (Kerokan)',
     'Brazilian Waxing',
-    'Bekam Basah',
-    'Sport Massage',
-    'Full Body Massage & Refleksi',
-    'Totok Wajah',
-    'Akupuntur',
+    'Wet Cupping Therapy',
+    'Sports Massage',
+    'Full Body Massage & Reflexology',
+    'Facial Acupressure',
+    'Acupuncture',
   ]
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
-    
+
     // Build WhatsApp message
-    const message = `Halo, saya ingin reservasi layanan:\n\nNama: ${formData.name}\nNo WhatsApp: ${formData.whatsapp}\nAlamat: ${formData.address}\nLayanan: ${formData.service}`
-    
+    const message = `Hello, I would like to book a service:\n\nName: ${formData.name}\nAddress: ${formData.address}\nService: ${formData.service}`
+
     // Open WhatsApp using centralized config
     window.open(getWhatsAppLink(message), '_blank')
   }
@@ -53,10 +52,10 @@ export function ReservationForm() {
           className="text-center mb-10"
         >
           <h2 className="text-4xl font-bold text-slate-900 mb-4">
-            Reservasi Sekarang
+            Book Now
           </h2>
           <p className="text-lg text-slate-600">
-            Isi form di bawah ini untuk melakukan reservasi layanan
+            Fill out the form below to make a reservation
           </p>
         </motion.div>
 
@@ -71,29 +70,14 @@ export function ReservationForm() {
             {/* Name */}
             <div>
               <label className="block text-slate-900 font-semibold mb-2 text-lg">
-                Nama
+                Name
               </label>
               <input
                 type="text"
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                placeholder="Masukkan nama Anda"
-                className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
-              />
-            </div>
-
-            {/* WhatsApp */}
-            <div>
-              <label className="block text-slate-900 font-semibold mb-2 text-lg">
-                No WhatsApp
-              </label>
-              <input
-                type="tel"
-                required
-                value={formData.whatsapp}
-                onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
-                placeholder="Contoh: 08123456789"
+                placeholder="Enter your name"
                 className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
               />
             </div>
@@ -101,13 +85,13 @@ export function ReservationForm() {
             {/* Address */}
             <div>
               <label className="block text-slate-900 font-semibold mb-2 text-lg">
-                Alamat
+                Address
               </label>
               <textarea
                 required
                 value={formData.address}
                 onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                placeholder="Masukkan alamat lengkap Anda"
+                placeholder="Enter your complete address"
                 rows={3}
                 className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all resize-none"
               />
@@ -116,7 +100,7 @@ export function ReservationForm() {
             {/* Service */}
             <div>
               <label className="block text-slate-900 font-semibold mb-2 text-lg">
-                Layanan
+                Service
               </label>
               <select
                 required
@@ -124,7 +108,7 @@ export function ReservationForm() {
                 onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                 className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none bg-white transition-all"
               >
-                <option value="">Pilih layanan</option>
+                <option value="">Select a service</option>
                 {services.map((service, index) => (
                   <option key={index} value={service}>
                     {service}
@@ -139,7 +123,7 @@ export function ReservationForm() {
               size="lg"
               className="w-full text-lg py-6 bg-green-500 hover:bg-green-600 text-white font-bold"
             >
-              Kirim via WhatsApp
+              Send via WhatsApp
             </Button>
           </form>
         </motion.div>

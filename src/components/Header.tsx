@@ -6,16 +6,17 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Beranda", href: "#" },
-    { name: "Tentang Kami", href: "#why-choose-us" },
-    { name: "Layanan", href: "#services" },
+    { name: "Home", href: "#" },
+    { name: "About", href: "#about" },
+    { name: "Why Choose Us", href: "#why-choose-us" },
+    { name: "Services", href: "#services" },
+    { name: "Testimonials", href: "#testimonials" },
     { name: "FAQ", href: "#faq" },
-    { name: "Kontak", href: "#contact" },
   ];
 
   const handleContactClick = () => {
     window.open(
-      getWhatsAppLink("Halo, saya ingin bertanya tentang layanan Anda tentang Momhom SPA dan Massage"),
+      getWhatsAppLink("Hello, I would like to inquire about your Canggu Massage services"),
       "_blank"
     );
   };
@@ -24,14 +25,11 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-32">
-          {/* Logo */}
+          {/* Logo - Text Based */}
           <div className="flex items-center">
-            <a href="/" className="block">
-              <img
-                src="/images/momhomlg.png"
-                alt="FND Logo"
-                className="h-24 w-auto rounded-3xl object-contain"
-              />
+            <a href="/" className="flex flex-col">
+              <span className="text-3xl font-bold text-slate-900">Canggu Massage</span>
+              <span className="text-sm text-slate-600">24-Hour Home Service</span>
             </a>
           </div>
 
@@ -51,7 +49,7 @@ export function Header() {
               className="bg-green-600 hover:bg-green-700"
               onClick={handleContactClick}
             >
-              Hubungi Kami
+              Contact Us
             </Button>
           </nav>
 
@@ -99,7 +97,7 @@ export function Header() {
               size="sm"
               onClick={handleContactClick}
             >
-              Hubungi Kami
+              Contact Us
             </Button>
           </nav>
         </div>

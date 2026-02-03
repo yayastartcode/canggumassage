@@ -9,24 +9,24 @@ import {
 export function FAQSection() {
   const faqs = [
     {
-      question: "Apakah layanan massage tersedia 24 jam?",
-      answer: "Ya, layanan kami tersedia 24 jam setiap hari termasuk hari libur. Anda bisa memesan kapan saja sesuai kebutuhan.",
+      question: "Is the massage service available 24 hours?",
+      answer: "Yes, our service is available 24 hours every day including holidays. You can book anytime according to your needs.",
     },
     {
-      question: "Bagaimana cara memesan layanan massage?",
-      answer: "Cukup hubungi kami via WhatsApp, pilih jenis layanan yang diinginkan, dan terapis kami akan datang ke lokasi Anda.",
+      question: "How do I book a massage service?",
+      answer: "Simply contact us via WhatsApp, choose the service type you want, and our therapist will come to your location.",
     },
     {
-      question: "Area mana saja yang dilayani?",
-      answer: "Kami melayani area Jabodetabek meliputi Jakarta, Tangerang, Bogor, Bekasi, dan Depok.",
+      question: "What areas are served?",
+      answer: "We serve the Bali area including Canggu, Seminyak, Kuta, Denpasar, and surrounding areas.",
     },
     {
-      question: "Apakah terapis sudah bersertifikat?",
-      answer: "Ya, semua terapis kami sudah profesional dan bersertifikat sesuai keahlian terapi masing-masing.",
+      question: "Are the therapists certified?",
+      answer: "Yes, all our therapists are professional and certified according to their respective therapy expertise.",
     },
     {
-      question: "Berapa lama durasi massage?",
-      answer: "Durasi massage bervariasi tergantung jenis layanan yang dipilih, mulai dari 60 menit hingga 120 menit.",
+      question: "How long is the massage duration?",
+      answer: "Massage duration varies depending on the service type chosen, starting from 60 minutes to 120 minutes.",
     },
   ];
 
@@ -54,9 +54,9 @@ export function FAQSection() {
             FAQS
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Pertanyaan Seputar Layanan
+            Questions About Our
             <br />
-            Massage Panggilan 24 Jam
+            24-Hour Home Massage Service
           </h2>
         </motion.div>
 

@@ -3,16 +3,10 @@ import { MapPin, Phone } from "lucide-react";
 import { getWhatsAppLink, formatWhatsAppNumber } from "@/lib/config";
 
 const locations = [
-  "Jakarta Selatan",
-  "Jakarta Timur",
-  "Jakarta Utara",
-  "Jakarta Barat",
-  "Tangerang Kota",
-  "Tangerang Selatan",
-  "Bekasi Kota",
-  "Bekasi Kabupaten",
-  "Depok",
-  "Bogor",
+  "Canggu",
+  "Kuta",
+  "Denpasar",
+  "Seminyak",
 ];
 
 export function ContactMap() {
@@ -25,9 +19,9 @@ export function ContactMap() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Area Layanan</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">Service Area</h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            Nikmati pengalaman pijat tanpa perlu meninggalkan rumah. Kami siap mendatangi Anda di manapun dan kapanpun, terutama di wilayah Jakarta, Tangerang, Bogor, Bekasi, Depok dan sekitarnya. Layanan kami tersedia sepanjang hari selama 24 jam. Pesanlah langsung melalui WhatsApp tanpa perlu mengunduh aplikasi tambahan.
+            Enjoy the massage experience without leaving your home. We are ready to visit you anywhere and anytime, especially in the Canggu and surrounding areas. Our service is available 24 hours a day. Book directly through WhatsApp without needing to download additional apps.
           </p>
         </motion.div>
 
@@ -43,7 +37,7 @@ export function ContactMap() {
               <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900">Lokasi</h3>
+              <h3 className="text-xl font-bold text-slate-900">Location</h3>
             </div>
             <div className="grid grid-cols-2 gap-3">
               {locations.map((loc, i) => (
@@ -65,24 +59,24 @@ export function ContactMap() {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Hubungi Kami</h3>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Contact Us</h3>
                   <a
-                    href={getWhatsAppLink("Halo, saya ingin bertanya tentang layanan Anda tentang Momhom SPA dan Massage")}
+                    href={getWhatsAppLink("Hello, I would like to inquire about your Canggu Massage services")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-2xl font-bold text-green-600 hover:text-green-700 transition-colors"
                   >
                     {formatWhatsAppNumber()}
                   </a>
-                  <p className="text-slate-600 mt-2 text-sm">Klik untuk chat via WhatsApp</p>
+                  <p className="text-slate-600 mt-2 text-sm">Click to chat via WhatsApp</p>
                 </div>
               </div>
             </div>
 
             <div className="bg-slate-100 rounded-2xl p-6">
-              <h4 className="font-semibold text-slate-900 mb-3">Jam Operasional</h4>
-              <p className="text-2xl font-bold text-blue-600">24 Jam</p>
-              <p className="text-slate-600 text-sm mt-1">Setiap hari, termasuk hari libur</p>
+              <h4 className="font-semibold text-slate-900 mb-3">Operating Hours</h4>
+              <p className="text-2xl font-bold text-blue-600">24 Hours</p>
+              <p className="text-slate-600 text-sm mt-1">Every day, including holidays</p>
             </div>
           </motion.div>
         </div>

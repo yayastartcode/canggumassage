@@ -29,7 +29,7 @@ export function Hero() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900"
           >
-            Mom-Hom Spa & Massage Panggilan 24 Jam
+            Canggu Massage - 24-Hour Home Service
           </motion.h1>
 
           <motion.p
@@ -38,13 +38,11 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl sm:text-2xl text-slate-900 max-w-3xl mx-auto font-medium"
           >
-            Kami menawarkan berbagai layanan Pijat tradisional, Massage, Full
-            body treatment, Aroma therapy massage, langsung di lokasi ANDA. Anda
-            tidak perlu lagi terjebak macet atau antre di salon kebugaran. Kami
-            hadir membawa relaksasi langsung ke rumah, apartemen, atau bahkan
-            hotel Anda. Anda tidak perlu lagi terjebak macet atau antre di salon
-            kebugaran. Kami hadir membawa relaksasi langsung ke rumah,
-            apartemen, atau bahkan hotel Anda.
+            We offer various Traditional Massage, Full Body Treatment, and
+            Aromatherapy Massage services directly at YOUR location. You no
+            longer need to get stuck in traffic or queue at wellness centers. We
+            come bringing relaxation directly to your home, apartment, or even
+            hotel.
           </motion.p>
 
           <motion.div
@@ -61,7 +59,7 @@ export function Hero() {
                 element?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Hubungi
+              Contact
             </Button>
           </motion.div>
         </motion.div>
