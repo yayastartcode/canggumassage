@@ -24,7 +24,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <h2 className="text-2xl font-bold text-white">Canggu Massage</h2>
-              <p className="text-sm text-slate-400">24-Hour Home Service</p>
+              <p className="text-sm text-slate-400">Healing 24-Hour</p>
             </div>
             <p className="text-slate-400 leading-relaxed mb-4">
               Canggu Massage is the best solution for certified traditional

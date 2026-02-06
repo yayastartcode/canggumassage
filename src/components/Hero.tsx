@@ -29,7 +29,7 @@ export function Hero() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900"
           >
-            Canggu Massage - 24-Hour Home Service
+            Canggu Massage - Healing 24- Hour
           </motion.h1>
 
           <motion.p
